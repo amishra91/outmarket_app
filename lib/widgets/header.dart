@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:outmarket_app/size_utils.dart';
 import 'package:outmarket_app/widgets/widgets.dart';
+import 'package:iconsax/iconsax.dart';
 
 class Header extends StatelessWidget {
   final String profilePhoto;
@@ -17,17 +18,14 @@ class Header extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            SizedBox(
+            const SizedBox(
                 child: Row(
               children: [
-                Image.asset(
-                  "assets/icons/extra.png",
-                  width: 24.0,
-                ),
-                const SizedBox(
+                Icon(Iconsax.category),
+                SizedBox(
                   width: 20,
                 ),
-                const Search(
+                Search(
                   width: 400,
                   radius: 20,
                 ),
@@ -40,7 +38,7 @@ class Header extends StatelessWidget {
                   Expanded(
                     child: Container(),
                   ),
-                  const Icon(Icons.notifications_outlined),
+                  Icon(Iconsax.notification_bing),
                   const SizedBox(
                     width: 20,
                   ),

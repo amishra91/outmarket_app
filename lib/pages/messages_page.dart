@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:outmarket_app/models/message_data.dart';
 import 'package:outmarket_app/widgets/message_view.dart';
 import 'package:outmarket_app/widgets/widgets.dart';
@@ -42,10 +43,10 @@ class _MessagesPageState extends State<MessagesPage> {
               const EdgeInsets.only(left: 24, right: 24, top: 20, bottom: 20),
           child: Column(
             children: [
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text(
+                  Text(
                     "Messaging",
                     style: TextStyle(
                       fontSize: 24,
@@ -54,18 +55,15 @@ class _MessagesPageState extends State<MessagesPage> {
                   ),
                   Row(
                     children: [
-                      const Text("Filter",
+                      Text("Filter",
                           style: TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.w500,
                           )),
-                      const SizedBox(
+                      SizedBox(
                         width: 4,
                       ),
-                      Image.asset(
-                        "assets/icons/sort.png",
-                        width: 24.0,
-                      ),
+                      Icon(Iconsax.sort)
                     ],
                   )
                 ],

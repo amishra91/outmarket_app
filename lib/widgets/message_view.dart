@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:outmarket_app/colors.dart';
 import 'package:outmarket_app/models/message_data.dart';
 import 'package:outmarket_app/screens/chat_screen.dart';
@@ -94,17 +95,15 @@ class _MessageViewState extends State<MessageView> {
                 child: const Row(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    Icon(
-                      Icons.video_call,
-                      size: 24,
-                    ),
+                    Icon(Iconsax.video),
                     SizedBox(
                       width: 24,
                     ),
-                    Icon(
-                      Icons.call_outlined,
-                      size: 24,
-                    )
+                    Icon(Iconsax.call),
+                    SizedBox(
+                      width: 24,
+                    ),
+                    Icon(Iconsax.category),
                   ],
                 ),
               )
@@ -131,10 +130,7 @@ class _MessageViewState extends State<MessageView> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Image.asset(
-                        "assets/icons/extra.png",
-                        width: 24.0,
-                      ),
+                      const Icon(Iconsax.category),
                       Expanded(
                         child: Stack(
                           children: [
@@ -170,10 +166,7 @@ class _MessageViewState extends State<MessageView> {
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: [
-                                  Image.asset(
-                                    "assets/icons/file.png",
-                                    width: 24.0,
-                                  ),
+                                  const Icon(Iconsax.attach_circle),
                                   const SizedBox(
                                     width: 10,
                                   ),
@@ -191,7 +184,7 @@ class _MessageViewState extends State<MessageView> {
                                         ),
                                       ),
                                       child: const Icon(
-                                        Icons.send,
+                                        Iconsax.send_21,
                                         color: Colors.white,
                                       ),
                                     ),
