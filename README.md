@@ -1,16 +1,24 @@
-# outmarket_app
+# Outmarket_app
 
-A new Flutter project.
+## Overview
+
+This Flutter-based chat app.
+
+## Features
+
+- **Chat:** one-on-one chat capability.
+- **History:** Display chat history for all users.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Installation
 
-A few resources to get you started if this is your first Flutter project:
+1. **Clone the Repository**
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   ```bash
+   clone the repository
+   cd to the repo
+   flutter pub get
+   flutter run -d chrome
+   This will launch the app in chrome.
+   ```
