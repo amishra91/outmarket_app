@@ -92,18 +92,27 @@ class _MessageViewState extends State<MessageView> {
               ),
               Container(
                 padding: const EdgeInsets.only(right: 70),
-                child: const Row(
+                child: Row(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    Icon(Iconsax.video),
+                    InkWell(
+                      child: const Icon(Iconsax.video),
+                      onTap: () {},
+                    ),
+                    const SizedBox(
+                      width: 24,
+                    ),
+                    InkWell(
+                      child: Icon(Iconsax.call),
+                      onTap: () {},
+                    ),
                     SizedBox(
                       width: 24,
                     ),
-                    Icon(Iconsax.call),
-                    SizedBox(
-                      width: 24,
+                    InkWell(
+                      child: Icon(Iconsax.category),
+                      onTap: () {},
                     ),
-                    Icon(Iconsax.category),
                   ],
                 ),
               )
@@ -166,7 +175,9 @@ class _MessageViewState extends State<MessageView> {
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: [
-                                  const Icon(Iconsax.attach_circle),
+                                  InkWell(
+                                      onTap: () {},
+                                      child: Icon(Iconsax.attach_circle)),
                                   const SizedBox(
                                     width: 10,
                                   ),
