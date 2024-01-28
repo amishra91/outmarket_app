@@ -38,6 +38,7 @@ dependencies:
   faker: ^2.1.0
   jiffy: ^6.2.2
   iconsax: ^0.0.8
+  google_fonts: ^6.1.0
 
 dev_dependencies:
   flutter_test:

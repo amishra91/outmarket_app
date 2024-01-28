@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:outmarket_app/screens/screens.dart';
 import 'package:outmarket_app/size_utils.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,10 +19,14 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     SizeUtils.init(context);
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Outmarket AI',
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      theme: ThemeData(
+          textTheme: GoogleFonts.interTextTheme(
+        Theme.of(context).textTheme,
+      )),
+      home: const HomeScreen(),
     );
   }
 }
