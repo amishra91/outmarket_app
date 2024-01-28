@@ -137,7 +137,7 @@ class _MessageViewState extends State<MessageView> {
                             Align(
                               alignment: Alignment.centerLeft,
                               child: Container(
-                                height: 60.0,
+                                height: 50.0,
                                 padding:
                                     const EdgeInsets.only(left: 12, right: 12),
                                 margin:

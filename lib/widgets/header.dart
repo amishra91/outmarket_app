@@ -38,7 +38,7 @@ class Header extends StatelessWidget {
                   Expanded(
                     child: Container(),
                   ),
-                  Icon(Iconsax.notification_bing),
+                  const Icon(Iconsax.notification_bing),
                   const SizedBox(
                     width: 20,
                   ),

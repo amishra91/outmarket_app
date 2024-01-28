@@ -1,6 +1,6 @@
 [
   {
-    "name": "Mr. Melyssa Schaden",
+    "name": "Melyssa",
     "avatarUrl": "https://source.unsplash.com/100x100",
     "messages": [
       {
@@ -131,12 +131,12 @@
     ]
   },
   {
-    "name": "Miss Tyson Pfannerstill",
+    "name": "Tyson Pfannerstill",
     "avatarUrl": "https://source.unsplash.com/100x100",
     "messages": [
       {
         "message": "Nunc sed velit dignissim sodales ut.",
-        "time": "2024-01-28T14:08:41.449",
+        "time": "2024-01-27T14:08:41.449",
         "isUserMessage": true
       },
       {
@@ -256,7 +256,7 @@
       },
       {
         "message": "Facilisis volutpat est velit egestas dui id ornare arcu.",
-        "time": "2024-01-28T14:08:41.449",
+        "time": "2024-01-27T14:08:41.449",
         "isUserMessage": true
       }
     ]

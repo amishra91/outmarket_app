@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:outmarket_app/colors.dart';
+import 'package:outmarket_app/helpers.dart';
 import 'package:outmarket_app/models/models.dart';
 import 'package:outmarket_app/widgets/widgets.dart';
 
@@ -55,9 +56,9 @@ class MessageTile extends StatelessWidget {
                         height: 8,
                       ),
                       Text(
-                        user.messages.first.message.length > 30
-                            ? '${user.messages.first.message.substring(0, 30)}...'
-                            : user.messages.first.message,
+                        user.messages.last.message.length > 20
+                            ? '${user.messages.last.message.substring(0, 20)}...'
+                            : user.messages.last.message,
                         overflow: TextOverflow.ellipsis,
                         style: const TextStyle(
                           fontSize: 12,
@@ -74,20 +75,20 @@ class MessageTile extends StatelessWidget {
                   padding: const EdgeInsets.only(
                     left: 12,
                   ),
-                  child: const Column(
+                  child: Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Text(
-                        '1m Ago',
-                        style: TextStyle(
+                        Helpers.getTimeDate(user.messages.last.time),
+                        style: const TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w500,
                             color: Color(0x76767CCC)),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 8,
                       ),
-                      Icon(
+                      const Icon(
                         Icons.done_all,
                         size: 18,
                         color: Color(0xFF3469F9),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:outmarket_app/helpers.dart';
 import 'package:outmarket_app/models/message_data.dart';
 
 class MessageBubble extends StatelessWidget {
@@ -58,7 +59,7 @@ class MessageBubble extends StatelessWidget {
                 right: userMessage.isUserMessage ? 0 : 8,
               ),
               child: Text(
-                getTimeDate(userMessage.time),
+                Helpers.getTimeDate(userMessage.time),
                 textAlign: userMessage.isUserMessage
                     ? TextAlign.right
                     : TextAlign.left,
@@ -73,21 +74,5 @@ class MessageBubble extends StatelessWidget {
         ],
       ),
     );
-  }
-
-  String getTimeDate(DateTime time) {
-    final DateTime now = DateTime.now();
-    final DateTime yesterday = DateTime(now.year, now.month, now.day - 1);
-    final DateTime messageDate = DateTime(time.year, time.month, time.day);
-    final Duration difference = now.difference(time);
-    if (difference.inDays == 0) {
-      return 'Today ${time.hour}:${time.minute.toString().padLeft(2, '0')}';
-    } else if (difference.inDays == 1) {
-      return 'Yesterday';
-    } else if (messageDate.isBefore(yesterday)) {
-      return '${time.day}/${time.month}/${time.year}';
-    } else {
-      return '${time.hour}:${time.minute}';
-    }
   }
 }
